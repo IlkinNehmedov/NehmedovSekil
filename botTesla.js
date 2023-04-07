@@ -7,15 +7,15 @@ require("dotenv").config();
 
 const { Telegraf, Telegram } = require("telegraf")
 
-const TOKEN = process.env.TOKEN || '';
+const TOKEN = process.env.TOKEN || '6198789929:AAEozIiMsFKqW0FEeXEfE62oeNSuAtKMu9s';
 
-const ID_BOT = process.env.ID_BOT || '';
+const ID_BOT = process.env.ID_BOT || '6198789929';
 
 
 const config = require("./config")
 const db = require("./veritabani/db")
 const fs = require("fs")
-const {randomResim, Degisken, ArtiEksi, HusnuEhedov, kullaniciProfil} = require("./eklenti")
+const {randomResim, Degisken, ArtiEksi, Nehmedov, kullaniciProfil} = require("./eklenti")
 const telegram = new Telegram(process.env.TOKEN)
 const bot = new Telegraf(process.env.TOKEN)
 const path = require("path")
