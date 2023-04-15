@@ -7,9 +7,9 @@ require("dotenv").config();
 
 const { Telegraf, Telegram } = require("telegraf")
 
-const TOKEN = process.env.TOKEN || '6198789929:AAEozIiMsFKqW0FEeXEfE62oeNSuAtKMu9s';
+const TOKEN = process.env.TOKEN || "6198789929:AAEUrmCjXJIlU3EgluiLIuQl72e_1AkBqCY";
 
-const ID_BOT = process.env.ID_BOT || '6198789929';
+const ID_BOT = process.env.ID_BOT || "6198789929";
 
 
 const config = require("./config")
@@ -80,7 +80,7 @@ const OyunYaratHusnuEhedov = chatId => {
 }
 
 const ozelMesaj = isGroup => Degisken(`
-    *Merhaba,Ben TeslaGameBot Tahmin Oyunu Zamanınızı eğlenceli hale getirimek için\nTelegram oyun botuyum🤖*
+    *Salam,Mən TetraGameBot Təxmin Oyunu Vaxtınızı Əyləncəli Hala Gətirmək Üçün\nTelegram Oyun Botuyam🤖*
     ${isGroup ? "" : "\n*Temel komutların listesi için /yardim*"}
 `)
 
